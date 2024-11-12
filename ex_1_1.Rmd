@@ -1,0 +1,11 @@
+---
+title: "ex_1_1: mijn eigen RMD"
+output: html_document
+date: "2024-11-12"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is my first RMarkdown file tracked by Git!!
