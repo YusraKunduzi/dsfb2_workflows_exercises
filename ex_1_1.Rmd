@@ -11,5 +11,5 @@ knitr::opts_chunk$set(echo = TRUE)
 This is my first RMarkdown file tracked by Git!!
 
 nog een aanpassing
-
+b
 nog eentje
