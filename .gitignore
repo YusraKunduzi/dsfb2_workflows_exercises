@@ -50,3 +50,7 @@ rsconnect/
 
 #bestanden die beginnen met csv
 csv*
+
+#bookdown voorbeeld
+
+data/**

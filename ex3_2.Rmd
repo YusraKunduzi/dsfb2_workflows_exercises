@@ -1,0 +1,33 @@
+How would you prepare for this analysis in R/Rstudio?
+
+Look at the contents of the file, which Excel Worksheet do you need for the analysis?
+  - Er is maar 1 sheet dus alleen die?
+
+Which steps do you need to take to load the data into R
+  -   salmonella_CFU_kinetics_OD600_in_LB_van_ipecs_8okt2020_kleur <- read_excel("salmonella CFU kinetics OD600 in        LB van ipecs 8okt2020 kleur.xlsx")
+
+Which steps do you need to take in reshaping the file to make the dataformat match the requirement for using `{ggplot}
+  - De sample nummers moeten in een kolom gezet worden. De eerste rij "ul sal" kan eruit gehaald worden. De laatste 2 rijen ook want die bevatten alleen NA's. Hierna alle kolommen veranderen van character naar dbl. De samples zijn ook met een tijdsverschil gemeten, er is geen informatie over de tijd tussen elke meting.
+
+
+Think of a better file name
+Een kortere naam is hier handig voor en met _ ipv spaties. salmonella_cfu en als het ook door anderen gebruikt moet worde dan salmonella_cfu_081020 (datum erachter).
+
+
+Write a conceptual and kind and friendly, but clear reply email (in English) to the researcher, where you address the changes that the researcher needs to make to the file in order for you to be able to analyze this data in R.
+
+  Dear mr./ms. (last name),
+  
+  I would like to make the plots per sample of the excel file that you sent to me. Unfortunately this is not          possible due to the composition of the data. I assume these are exctinction values because the samples are          measured with a platereader. I kindly ask you to make the following adjustments:
+  
+  1. The time of measurment as a column.
+  2. Delete every row that does not contain extinction values like "ul sal". 
+  3. The headers of each sample should have different names, for example there are four headers called "MV" which     should be "MV1, MV2, etc". 
+  4. A different file name. For example "salmonella_cfu_081020". The file name should have no spaces, special         characters or capital letters. 
+  
+  Please send me the updated file once it's ready and let me know if you have any questions.
+  
+  Kind regards,
+  
+  Yusra Kunduzi
+  
