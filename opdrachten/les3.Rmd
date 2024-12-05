@@ -1,3 +1,5 @@
+
+ex3.2
 How would you prepare for this analysis in R/Rstudio?
 
 Look at the contents of the file, which Excel Worksheet do you need for the analysis?
@@ -31,3 +33,11 @@ Write a conceptual and kind and friendly, but clear reply email (in English) to 
   
   Yusra Kunduzi
   
+
+ex3.9
+
+3. Er komt extra info bij zoals de datum, test id's en veel NA's.
+4. # all_cycles_salmonella_neat <- all_cycles_salmonella[-c(1:10), ]
+  # view(all_cycles_salmonella_neat)
+5. De data is niet tidy
+6. 
