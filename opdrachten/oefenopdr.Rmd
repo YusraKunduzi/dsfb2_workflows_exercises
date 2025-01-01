@@ -1,0 +1,45 @@
+---
+title: "Je Titel"
+author: "Je Naam"
+output:
+  html_document:
+    css: "regenboogcss.css"
+---
+
+$Y = aX + b$
+
+\begin{equation}
+\label{eq-abc}
+ \binom{n}{k} = \frac{n!}{k!(n-k)!}
+\end{equation}
+
+<!-- <mark> XXX more html here </mark> -->
+
+```{r, cache=TRUE, echo=FALSE}
+library(ggplot2)
+ggplot(mpg, aes(displ, hwy, color = class)) + 
+  geom_point() # Some really slow plot
+```
+
+<div>
+  <h2>Dit is een titel binnen de div</h2>
+  <p>Dit is een paragraaf binnen de div. Je kunt allerlei inhoud hier plaatsen, zoals tekst, tabellen, of zelfs andere HTML-elementen.</p>
+</div>
+
+```{r class.source="bg-danger", class.output="bg-warning"}
+mtcars[1:5, "mpg"]
+```
+
+
+```{css, echo=FALSE}
+.watch-out {
+  background-color: lightpink;
+  border: 3px solid red;
+  font-weight: bold;
+}
+```
+
+```{r}
+mtcars[1:5, "mpg"]
+```
+

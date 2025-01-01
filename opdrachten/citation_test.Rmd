@@ -1,0 +1,23 @@
+---
+title: "Je Titel"
+author: "Je Naam"
+output:
+  html_document:
+    css: "regenboogcss.css"
+bibliography: bibliography.bib
+---
+
+```{r, include=FALSE}
+
+rbbt::bbt_write_bib("bibliography.bib", overwrite = TRUE)
+
+```
+
+bla bla bla onderzoekje [@tangLncRNACircRNAExpression2023]
+
+
+```{r}
+library(rbbt)
+
+bbt_update_bib("citation_test.rmd")
+```

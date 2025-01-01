@@ -1,0 +1,54 @@
+---
+title: "Je Titel"
+author: "Je Naam"
+output:
+  html_document:
+    css: "regenboogcss.css"
+bibliography: bibliography.bib
+---
+
+![Mijn kat Suki](images/Suki1.jpg)
+
+[surprise link](https://nds-nl.wikipedia.org/wiki/Barack_Obama)
+
+<div>
+  <h2>titeltje</h2>
+  <p> paragraafje</p>
+</div>
+
+
+![Nog een keer 'Suki'](images/suki jwz2.jpg)
+
+
+| Afbeelding | Naam | diersoort | leeftijd |
+|------------|------|-----------|----------|
+| 1          | Suki | Kat       | 1        |
+| 2          | Suki | Leeuw     | 2        |
+
+```{r}
+library(rbbt)
+library(ggplot2)
+library(tidyverse)
+
+
+dieren_data <- data.frame(
+  Naam = c("Suki", "Suki"),
+  Diersoort = c("Kat", "Leeuw"),
+  Leeftijd = c(1, 2),
+  Rating = c(8, 9),  # Rating van 1 tot 10
+  stringsAsFactors = FALSE
+)
+
+ggplot(dieren_data, aes(x = Naam, y = Rating, fill = Diersoort)) +
+  geom_bar(stat = "identity", show.legend = FALSE) +
+  scale_fill_manual(values = c("Kat" = "orange", "Leeuw" = "yellow")) +
+  labs(
+    title = "Dieren Rating",
+    x = "Naam",
+    y = "Rating (1-10)"
+  ) +
+  theme_minimal()
+
+
+```
+[@tangLncRNACircRNAExpression2023]
